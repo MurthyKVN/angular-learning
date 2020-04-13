@@ -1,0 +1,21 @@
+<!-- Toolbar -->
+<mat-toolbar class="toolbar" role="banner">
+  <mat-icon (click)="sideNavBar.toggle()">menu</mat-icon>
+  <span>&nbsp;</span>
+  <h1> COVID-19</h1>
+</mat-toolbar>
+
+<mat-sidenav-container class="tracker-sidebar-container">
+  <mat-sidenav #sideNavBar mode="push" fixedInViewport="true" class="tracker-sidenav">
+    <div>
+      <mat-icon (click)="sideNavBar.toggle()">menu</mat-icon>
+    </div>
+
+    <mat-nav-list>
+      <mat-list-item routerLink="country-wise">World</mat-list-item>
+      <mat-list-item>India</mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+</mat-sidenav-container>
+
+<router-outlet></router-outlet>

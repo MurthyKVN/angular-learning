@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/04b52632-5436-48bd-b13d-cba82412aa05/resourceGroups/learning/providers/Microsoft.Web/sites/covid-tracker",
+    "appService.deploySubpath": ""
+}
